@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="960dp"
+    android:layout_height="540dp"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="320dp"
+            android:gravity="center"
+            android:shadowColor="#FFD700"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="OEE 综 合 性 能 看 板"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="125dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:text="2019:12:12 08:08:08"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#15E929">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/kaishi" />
+
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="生产中"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h2"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#FFFF00">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/shizhong" />
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="首件、送检"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h1"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#FF4500">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/zanting" />
+
+            <TextView
+                android:id="@+id/h3"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="异常停机、品质异常"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h3"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#FF5050">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/jingbao" />
+
+            <TextView
+                android:id="@+id/h4"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="调机、上下模、换料"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h4"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#898989">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/shizhong" />
+
+            <TextView
+                android:id="@+id/h5"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="待单"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h5"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#F4A460">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/dianyuan" />
+
+            <TextView
+                android:id="@+id/h6"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="修模、修机、待料"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h6"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#87CEFA">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/weixiu" />
+
+            <TextView
+                android:id="@+id/h7"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="保养"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h7"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:background="#2F4F4F">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/jieshu" />
+
+            <TextView
+                android:id="@+id/h8"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="停机"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/h8"
+                android:gravity="right"
+                android:text="20台"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:gravity="center"
+                android:text="当前车间效率"
+                android:textColor="#FFD700" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="时间稼动率:"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="50%:"
+                    android:textColor="#FFD700"
+                    android:textSize="12dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="良品率:"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="50%:"
+                    android:textColor="#00FF00"
+                    android:textSize="12dp"
+
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="性能稼动率:"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="50%:"
+                    android:textColor="#00FFFF"
+                    android:textSize="12dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="综合OEE:"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="50%:"
+                    android:textColor="#FF8C00"
+                    android:textSize="12dp"
+
+                    />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="480dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sjjdl"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="时间稼动率"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/sjjdl"
+                android:gravity="center"
+                android:text="时间损失TOPS"
+                android:textColor="#FFD700" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart1"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/bar_chart2"
+                android:layout_width="238dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/bar_chart1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/bar_chart2"
+                android:background="#0000CD" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="480dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bltops"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="不良TOPS"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/bltops"
+                android:gravity="center"
+                android:text="良品率"
+                android:textColor="#FFD700" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/bar_chart3"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart4"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/bar_chart3" />
+
+
+        </RelativeLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000CD" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="480dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/xnjdl"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="性能稼动率"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/xnjdl"
+                android:gravity="center"
+                android:text="利用率(低)TOPS"
+                android:textColor="#FFD700" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart5"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/bar_chart6"
+                android:layout_width="238dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/bar_chart5" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/bar_chart6"
+                android:background="#0000CD" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="480dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/zhxn"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="综合性能(低)TOPS"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/zhxn"
+                android:gravity="center"
+                android:text="综合性能OEE"
+                android:textColor="#FFD700" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/bar_chart7"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart8"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/bar_chart7" />
+
+
+        </RelativeLayout>
+
+    </TableRow>
+
+
+</LinearLayout>
